@@ -1,0 +1,13 @@
+export const CENTER = 'center';
+export const ROW = 'row';
+export const KEYBOARD_TYPE_NUMBER_PAD = 'number-pad';
+export const SPACE_EVENLY = 'space-evenly';
+export const WRAP = 'wrap';
+export const SPACE_BETWEEN = 'space-between';
+export const LEFT = 'left';
+export const RIGHT = 'right';
+export const KEYBOARD_NUMERIC = 'numeric';
+export const ABSOLUTE = 'absolute';
+export const BOLD = 'bold';
+export const FLEX_START = 'flex-start';
+export const FLEX_END = 'flex-end';

@@ -1,0 +1,1 @@
+export const GET_USER_RESPONSE = 'GET_USER_RESPONSE';
