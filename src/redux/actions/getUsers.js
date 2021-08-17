@@ -7,14 +7,12 @@ export const getUser = (pageNo) => {
         helper.get_req(`${GET_USER}${pageNo}&results=10`)
     
         .then((res)=>{
-            console.log(res)
             dispatch({
                 type: GET_USER_RESPONSE,
                 payload: res
             })
         })
         .catch((err)=>{
-            console.log(err.response)
             dispatch({
                 type: GET_USER_RESPONSE,
                 payload: err.response

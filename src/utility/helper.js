@@ -17,7 +17,6 @@ export const get_req = (path) => {
 
 export const registrationDateFormate = (data) => {
     let date = new Date(data.date)
-    console.log(date.getHours())
     let hours = date.getHours() < 10 ? '0' + date.getHours() : date.getHours()
     let minutes = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()
     let month = date.toLocaleString('default', { month: 'long' })

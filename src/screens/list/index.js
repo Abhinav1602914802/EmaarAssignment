@@ -50,7 +50,6 @@ export default index = ({ navigation }) => {
 
     const renderItem = ({ item }) => (
         <TouchableOpacity onPress={() => onPressCard(item)} style={styles.card}>
-            <View>{console.log(item)}</View>
             <Image source={{ uri: item.picture.medium }} style={styles.avatar} />
             <View style={styles.details}>
                 <View style={styles.textContainer}>

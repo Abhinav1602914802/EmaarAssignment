@@ -8,7 +8,6 @@ export default index = ({ route, navigation }) => {
 
     const user = route.params.user;
     useEffect(()=>{
-        console.log(navigation)
         navigation.setOptions({title: `${user.name.first} ${user.name.last}`})
     }, [user])
 
