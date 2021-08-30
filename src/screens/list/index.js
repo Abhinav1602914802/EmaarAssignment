@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, SafeAreaView, FlatList, Image, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { DETAIL_SCREEN } from '../../navigators/ROUTES';
-import { getUser } from '../../redux/actions';
+// import { getUser } from '../../redux/actions';
 import { COUNTRY, EMPTY_ARRAY, ERROR, SOMETHING_WRONG } from '../../utility/appString';
 import styles from './style';
 import Spinner from '../components/spinner';
 import { registrationDateFormate } from '../../utility/helper';
+import {getUser} from '../../redux/reducers/getUsers';
 
 export default index = ({ navigation }) => {
 
     const dispatch = useDispatch();
-    const responseData = useSelector(({ getUsers }) => getUsers.state);
+    const responseData = useSelector(({ getUsers }) => getUsers.users);
 
     const [userArray, setUserArray] = useState(EMPTY_ARRAY);
     const [loading, setLoading] = useState(false);

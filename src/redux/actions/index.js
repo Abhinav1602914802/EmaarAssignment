@@ -1,3 +1,0 @@
-export {
-    getUser
-} from './getUsers'

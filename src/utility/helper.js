@@ -1,19 +1,3 @@
-import axios from 'axios';
-import { BASE_URL } from '../config/server';
-
-// function for get request
-export const get_req = (path) => {
-    const url = BASE_URL + path;
-    const header = {
-        "Access-Control-Allow-Origin": "*",
-    };
-
-    return axios({
-        method: 'get',
-        url: url,
-        headers: header
-    });
-}
 
 export const registrationDateFormate = (data) => {
     let date = new Date(data.date)

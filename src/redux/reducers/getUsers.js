@@ -1,15 +1,26 @@
-import { GET_USER_RESPONSE } from "../type";
+import { GET_USERS, SET_USERS } from "../type";
+
+export const getUser = (page) => ({
+    type: GET_USERS,
+    page
+})
+
+export const setUsers = (users) => ({
+    type: SET_USERS,
+    users
+})
 
 const initialState = {
-    state: null
+    users: null
 }
 
 const getUsers = (state = initialState, action) => {
     switch (action.type) {
-        case GET_USER_RESPONSE:
+        case SET_USERS:
+            const {users} = action;
             return {
                 ...state,
-                state: action.payload
+                users
             };
         default: 
             return state;

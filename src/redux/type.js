@@ -1,1 +1,2 @@
-export const GET_USER_RESPONSE = 'GET_USER_RESPONSE';
+export const GET_USERS = 'GET_USERS';
+export const SET_USERS = 'SET_USERS';
